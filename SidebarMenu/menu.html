@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+    <body>
+        <!-- Creates a fixed menu bar at the top of the page -->
+        <section class="menuBar">
+            <!-- Adds the menuButton to the menuBar -->
+            <div class="menuButton" id="menuButton" onclick="toggleMenu()">
+                <!-- Button Image -->
+                <img src="" alt=" ">
+            </div>
+        </section>
+
+        <!-- This section is the sidepanel that comes visible 
+             when the menuButton is clicked -->
+        <section class="menu" id="menu">
+            <!-- Adds a HOME button item to the menu -->
+            <div class="menuItem"  style="justify-content: center;">
+                <!-- Link to home page -->
+                <a href="menu.html"  style="display: block; width: 100%; height: 100%;">
+                    <h3 class="menuItemText">
+                        HOME
+                    </h3>
+                </a>
+            </div>
+
+
+
+            <!-- Adds a dropdown bar that opens when clicked -->
+            <div class="menuItem" id="dropdown1" onclick="toggleSubmenu('submenu1', 'dropdown1Icon')">
+                <!-- Adds an item to the menu -->
+                <h3 class="menuItemText">
+                    Dropdown1
+                </h3>
+                <!-- Arrow Image for Dropdown -->
+                <div class="menuItemDropdownIcon" id="dropdown1Icon">
+                    <img src="" alt=" ">
+                </div>
+            </div>
+            <!-- The submenu that opens when the dorpdown is clicked -->
+            <div class="submenu" id="submenu1">
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 1</a>
+                </div>                
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 2</a>
+                </div>                
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 3</a>
+                </div>
+            </div>
+
+
+
+            <!-- Adds a dropdown bar that opens when clicked -->
+            <div class="menuItem" id="dropdown2" onclick="toggleSubmenu('submenu2', 'dropdown2Icon')">
+                <!-- Adds an item to the menu -->
+                <h3 class="menuItemText">
+                    Dropdown2
+                </h3>
+                <!-- Arrow Image for Dropdown -->
+                <div class="menuItemDropdownIcon" id="dropdown2Icon">
+                    <img src="" alt=" ">
+                </div>
+            </div>
+            <!-- The submenu that opens when the dorpdown is clicked -->
+            <div class="submenu" id="submenu2">
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 1</a>
+                </div>     
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 2</a>
+                </div>    
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 3</a>
+                </div>
+            </div>
+
+
+
+            <!-- Adds a dropdown bar that opens when clicked -->
+            <div class="menuItem" id="dropdown3" onclick="toggleSubmenu('submenu3', 'dropdown3Icon')">
+                <!-- Adds an item to the menu -->
+                <h3 class="menuItemText">
+                    Dropdown3
+                </h3>
+                <!-- Arrow Image for Dropdown -->
+                <div class="menuItemDropdownIcon" id="dropdown3Icon">
+                    <img src="" alt=" ">
+                </div>
+            </div>
+            <!-- The submenu that opens when the dorpdown is clicked -->
+            <div class="submenu" id="submenu3">
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 1</a>
+                </div>                
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 2</a>
+                </div>                
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 3</a>
+                </div>
+            </div>
+
+
+
+
+            <!-- Adds a dropdown bar that opens when clicked -->
+            <div class="menuItem" id="dropdown4" onclick="toggleSubmenu('submenu4', 'dropdown4Icon')">
+                <!-- Adds an item to the menu -->
+                <h3 class="menuItemText">
+                    Dropdown4
+                </h3>                
+                <!-- Arrow Image for Dropdown -->
+                <div class="menuItemDropdownIcon" id="dropdown4Icon">
+                    <img src="" alt=" ">
+                </div>
+            </div>
+            <!-- The submenu that opens when the dorpdown is clicked -->
+            <div class="submenu" id="submenu4">
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText"> Link 1</a>
+                </div>                
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 2</a>
+                </div>                
+                <!-- Adds an item to the submenu -->
+                <div class="submenuItem">
+                    <!-- Link to submenu item page -->
+                    <a href="link1.html" class="submenuItemText">Link 3</a>
+                </div>
+            </div>
+        </section>
+
+        <!------------- Put the Main content of the page here -------------->
+        <section class="content" id="content">
+            <br><br><br><br><br>
+            <h1 style="text-align: center; font-size: 100px;">
+                Welcome to the Sidebar Menu
+            </h1>
+            <h4 style="text-align: center; font-size: 50px;">
+                This is the main content of the page.
+            </h4>
+            <p style="text-align: center; font-size: 25px;">
+                This should all go blurry when the menu is open
+            </p>
+        </section>
+
+        <!-- Script that contains the neccessary functions -->
+        <script src="menu.js"></script>
+    </body>
+</html>
