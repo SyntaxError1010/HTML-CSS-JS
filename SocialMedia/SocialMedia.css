@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    margin: 0;
+    height: 500px;
+    background-color: white;
+    justify-content: center;
+}
+
+.linkSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 20px;
+  align-content: center;
+  margin-top: 100px;    /* Margin the section away from the top of the page*/
+  padding:5px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.linkBlock {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+}
+
+.linkIcon {
+  justify-content: center;
+  align-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
