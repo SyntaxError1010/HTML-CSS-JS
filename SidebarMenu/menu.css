@@ -1,0 +1,124 @@
+body {
+    background-color: bisque;
+    margin: 0;
+    height: 2000px;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: lightgrey;
+}
+.menuButton:hover {
+    background-color: grey;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    opacity: 0;
+    margin: 0;
+    width: 25vw;
+    height: 100vh; /* Ensure the menu covers the full viewport height */
+    background-color: lightgrey;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+    position: fixed; /* Fix the menu position */
+    margin-top: 80px; /* Ensure the menu is below the menu bar */
+}
+.menu.open {
+    opacity: 1; /* Set opacity to 100% */
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    cursor: pointer;
+    background-color: lightgrey;
+    border-bottom: 1px ridge grey;
+}
+.menuItem:hover {
+    background-color: grey;
+}
+
+.menuItemText {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-size: 1.8vh;
+    text-indent: 1em;
+    font-weight: normal;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px ridge grey;
+}
+.submenu.open {
+    display: flex;
+}
+
+.submenuItem {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+.submenuItem:hover {
+    background-color: white;
+}
+.submenuItemText {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vh;
+    padding-left: 2%;
+    text-indent: 2em;
+    line-height: 2;
+}
+
+.menuItemDropdownIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1.5em;
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.menuItemDropdownIcon.rotate {
+    transform: rotate(180deg); /* Rotate 180 degrees */
+}
+
+.blur {
+    filter: blur(5px); /* Apply blur effect */
+    transition: filter 0.3s ease-in-out; /* Smooth transition for blur effect */
+}
